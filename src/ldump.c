@@ -208,7 +208,7 @@ int luaU_dump(lua_State *L, const Proto *f, lua_Writer w, void *data,
   D.strip = strip;
   D.status = 0;
   DumpHeader(&D);
-  DumpByte(f->sizeupvalues, &D);
+  //DumpByte(f->sizeupvalues, &D);
   DumpFunction(f, NULL, &D);
   return D.status;
 }
